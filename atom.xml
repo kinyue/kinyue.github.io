@@ -131,7 +131,7 @@
     <link href="http://kinyue.github.io/2014/12/21/processing-text-alignment/"/>
     <id>http://kinyue.github.io/2014/12/21/processing-text-alignment/</id>
     <published>2014-12-21T04:47:03.000Z</published>
-    <updated>2016-04-24T08:47:31.407Z</updated>
+    <updated>2016-04-24T13:55:24.241Z</updated>
     
     <content type="html">&lt;h1 id=&quot;几个排版的概念&quot;&gt;&lt;a href=&quot;#几个排版的概念&quot; class=&quot;headerlink&quot; title=&quot;几个排版的概念&quot;&gt;&lt;/a&gt;几个排版的概念&lt;/h1&gt;&lt;p&gt;Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidth()，但没有对应的获取高度的textHeight()。另外textAscent()和textDescent()两个函数又是干嘛的呢？&lt;a href=&quot;https://www.processing.org/reference/textDescent_.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;API&lt;/a&gt;里的描述是：&lt;/p&gt;
 &lt;blockquote&gt;
