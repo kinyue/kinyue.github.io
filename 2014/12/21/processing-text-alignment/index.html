@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Processing中的文字对齐 | FILO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="几个排版的概念Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidth()，但没有对应的获取高度的textHeight()。另外textAscent()和textDescent()两个函数又是干嘛的呢？API里的描述是：
+
+Returns descent of the current font at its current size. This inf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Processing中的文字对齐">
+<meta property="og:url" content="http://kinyue.github.io/2014/12/21/processing-text-alignment/index.html">
+<meta property="og:site_name" content="FILO">
+<meta property="og:description" content="几个排版的概念Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidth()，但没有对应的获取高度的textHeight()。另外textAscent()和textDescent()两个函数又是干嘛的呢？API里的描述是：
+
+Returns descent of the current font at its current size. This inf">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img1.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img2.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img3.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img4.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/Typography_Line1.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img1.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img5.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img6.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img7.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img8.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img9.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img10.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img11.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img12.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img13.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img14.png">
+<meta property="og:image" content="http://kinyue.github.io/imgs/processing-textalignment/img15.png">
+<meta property="og:updated_time" content="2016-04-24T08:47:31.407Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Processing中的文字对齐">
+<meta name="twitter:description" content="几个排版的概念Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidth()，但没有对应的获取高度的textHeight()。另外textAscent()和textDescent()两个函数又是干嘛的呢？API里的描述是：
+
+Returns descent of the current font at its current size. This inf">
+<meta name="twitter:image" content="http://kinyue.github.io/imgs/processing-textalignment/img1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="FILO" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">FILO</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">F In Loneliness</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://kinyue.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-processing-text-alignment" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/21/processing-text-alignment/" class="article-date">
+  <time datetime="2014-12-21T04:47:03.000Z" itemprop="datePublished">2014-12-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Notes/">Notes</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Processing中的文字对齐
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="几个排版的概念"><a href="#几个排版的概念" class="headerlink" title="几个排版的概念"></a>几个排版的概念</h1><p>Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidth()，但没有对应的获取高度的textHeight()。另外textAscent()和textDescent()两个函数又是干嘛的呢？<a href="https://www.processing.org/reference/textDescent_.html" target="_blank" rel="external">API</a>里的描述是：</p>
+<blockquote>
+<p>Returns descent of the current font at its current size. This information is useful for determining the height of the font below the baseline.</p>
+</blockquote>
+<p>看到这里大概能猜到，baseline应该是字符对齐的线，而descent和ascent大概是下和上的边界跟baseline的距离。但是这几条线之间有什么关系，他们又是怎么算的呢？试着把它们画出来是这样的。</p>
+<p><img src="/imgs/processing-textalignment/img1.png" alt="Default Vertical Alignment"></p>
+<p>可一旦给他们设定对齐方式之后，奇怪的事情便发生了。将文字设为顶端对齐，然后三条线的计算方式不变，得到的结果是这样的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textAlign(LEFT, TOP);</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img2.png" alt="Top Vertical Alignment"></p>
+<p>底部对齐是这样的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textAlign(LEFT, BOTTOM);</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img3.png" alt="Bottom Vertical Alignment"></p>
+<p>好吧，那改成居中试一下。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textAlign(LEFT, CENTER);</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img4.png" alt="Center Vertical Alignment"></p>
+<p>结果都完全走样了。从上面几张图来看，TOP和BOTTOM这两种对齐的上边线和下边线的位置还是可以算出来的，但是CENTER则让人摸不着头脑。这几个概念到底是什么呢？有没有明确的可以调用的计算公式呢？</p>
+<p>维基上有这么一张图：</p>
+<p><img src="/imgs/processing-textalignment/Typography_Line1.png" alt="Typography Line"></p>
+<p>参考<a href="http://pfaedit.sourceforge.net/glossary.html#A" target="_blank" rel="external">术语表</a>排版业应该是这样定义这几个术语的：</p>
+<ul>
+<li><p>Baseline 字符主体下部对齐的线，也是人们感受文字位置同一行时不可见的那条线。英文字体一般这条线都会对得齐，但维基也说了：</p>
+<blockquote>
+<p>In some scripts, parts of glyphs lie below the baseline.</p>
+</blockquote>
+</li>
+<li><p>x-height 小写字母主体上部水平对齐线，x的顶部或者t的横线会刚好对齐，但像i或者n等有尖端或弧度的线，则会略微向上穿透，这点可以从上图看出。维基上讲x-height一般跟mean line是一致的，而且：</p>
+<blockquote>
+<p>The mean line, also called the midline, is half the distance from the baseline to the cap height.</p>
+</blockquote>
+<p>但很多字体为了表现效果，常常使x-height偏移mean line的位置。因此，这条线的位置是字体相关的，若API没有提供相关功能，则只能估算。</p>
+</li>
+<li><p>cap height 大写字母主体上部水平对齐线。如上图的字母S。</p>
+</li>
+<li><p>ascent 是字符的上边界，向上突出最多的字母突出部分也不会超过这条线。</p>
+</li>
+<li><p>descent 同理，是字符的下边界。</p>
+</li>
+</ul>
+<p>本文把这五个概念合称为字形五线。有了这几个概念，再来研究Processing是怎么算出它们的位置的，以及文字是怎么对齐的。</p>
+<hr>
+<h1 id="默认对齐"><a href="#默认对齐" class="headerlink" title="默认对齐"></a>默认对齐</h1><p>Processing中的textAscent()和textDescent()来自于类PApplet，追溯源代码，发现最终取值于字体类PFont的成员变量：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * The ascent of the font. If the 'd' character is present in this PFont,</span><br><span class="line"> * this value is replaced with its pixel height, because the values returned</span><br><span class="line"> * by FontMetrics.getAscent() seem to be terrible.</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">int</span> ascent;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * The descent of the font. If the 'p' character is present in this PFont,</span><br><span class="line"> * this value is replaced with its lowest pixel height, because the values</span><br><span class="line"> * returned by FontMetrics.getDescent() are gross.</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">int</span> descent;</span><br></pre></td></tr></table></figure>
+<p>这是字符size为1时的ascent和descent的值，代码实际返回的是：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textFont.ascent() * textSize;</span><br></pre></td></tr></table></figure>
+<p>从代码上看，这个返回值与字体大小相关，但是实际上下面这张图里代码返回的明显不是会与字形接触到的边界：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">text(<span class="string">"Righteously"</span>,<span class="number">80</span>,<span class="number">200</span>);</span><br><span class="line">stroke(<span class="number">255</span>,<span class="number">100</span>,<span class="number">0</span>);</span><br><span class="line">strokeWeight(<span class="number">2</span>);</span><br><span class="line">line(<span class="number">0</span>,<span class="number">200</span>,<span class="keyword">this</span>.width,<span class="number">200</span>);</span><br><span class="line">stroke(<span class="number">0</span>,<span class="number">255</span>,<span class="number">100</span>);</span><br><span class="line">line(<span class="number">0</span>,<span class="number">200</span>-textAscent(),<span class="keyword">this</span>.width,<span class="number">200</span>-textAscent());</span><br><span class="line">stroke(<span class="number">100</span>,<span class="number">0</span>,<span class="number">255</span>);</span><br><span class="line">line(<span class="number">0</span>,<span class="number">200</span>+textDescent(),<span class="keyword">this</span>.width,<span class="number">200</span>+textDescent());</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img1.png" alt="Text Default Vertical Alignment"></p>
+<p>但使用Wiki示例的字体后则完美对齐：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textFont(createFont(<span class="string">"Adobe Caslon Pro"</span>, <span class="number">1</span>));</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img5.png" alt="Adobe Caslon Pro"></p>
+<p>因此，就目前本人使用的processing-2.2.1版本来说，ascent与descent值仅与字体大小有关，而不受字体类型的影响，并且返回的是各自相对baseline的位移，而不是具体的坐标值。这就意味着Processing返回的值与用户使用的字体无关，使用API只能得出字形的上限和下限，无法精确地计算出实际字形中上述几条线的位置。下面以默认对齐为例来计算字形五线的位置。下图的三段文字的字体分别是微软雅黑、Adobe Caslon Pro和Times New Roman Italic，大小均为75，代码与结果如下（请忽略语法错误，懒得重新截图了）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">String chineseStr = <span class="string">"尺寸不是问题！"</span>;</span><br><span class="line">String englishStr1 = <span class="string">"Er... Size is not an problem"</span>;</span><br><span class="line">String englishStr2 = <span class="string">"Even it's OBLIQUE!"</span>;</span><br><span class="line"><span class="keyword">float</span> x1 = <span class="number">100</span>, x2 = <span class="number">100</span>, x3 = <span class="number">100</span>, y1= <span class="number">100</span>, y2 = <span class="number">300</span>, y3 = <span class="number">500</span>;</span><br><span class="line">textFont(createFont(<span class="string">"MSYH"</span>, <span class="number">75</span>));</span><br><span class="line">text(<span class="string">"尺寸不是问题！"</span>, x1, y1);</span><br><span class="line">textFont(createFont(<span class="string">"Adobe Caslon Pro"</span>, <span class="number">75</span>));</span><br><span class="line">text(englishStr1, x2, y2);</span><br><span class="line">textFont(createFont(<span class="string">"Times New Roman Italic"</span>, <span class="number">75</span>));</span><br><span class="line">text(englishStr2, x3, y3);</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img6.png" alt="Not at all #1"></p>
+<p>在Processing中，baseline对齐就是默认的对齐方式，假设文字<code>text(string, x, y)</code>则：</p>
+<ul>
+<li><p><code>baseline = y</code></p>
+</li>
+<li><p><code>descent = y + textDescent()</code></p>
+</li>
+<li><p><code>ascent = y - textAscent()</code></p>
+</li>
+</ul>
+<p>是显而易见的，把这三条线画出来效果如下：</p>
+<p><img src="/imgs/processing-textalignment/img7.png" alt="Not at all #2"></p>
+<p>这三种字体中，只有Adobe Caslon Pro能够严丝合缝地对齐，而微软雅黑和斜体的Times New Roman上部都留有大量空白，而中文字符甚至不跟baseline对齐。另外，假设一行文字的总高度为textHeight，则：</p>
+<ul>
+<li><code>textHeight = textDescent() + textAscent()</code></li>
+</ul>
+<p>如果能画出给定文字的四条边界（左右边界较好理解，这里不赘述，可参考<a href="https://www.processing.org/reference/textWidth_.html" target="_blank" rel="external">textWidth</a>方法），那么也就可以算出给定四边界下合适的文字大小是多少了，这就可以解决我的问题了。另外，字形五线的另外两条可能就更不准确了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">The vertical alignment is based on the value of textAscent(),</span><br><span class="line">which many fonts do not specify correctly. It may be necessary to use a</span><br><span class="line">hack and offset by a few pixels by hand so that the offset looks</span><br><span class="line">correct. To do this as less of a hack, use some percentage of</span><br><span class="line">textAscent() or textDescent() so that the hack works even</span><br><span class="line">if you change the size of the font.</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+<p>好吧，那就根据这个来大概估算一下cap height和x-height的位置吧。首先是cap height，按定义，它应该位于大写字母S的顶部，但是很不幸地维基的描述至少在Processing里是不准确的，大写S实际上跟小写的b与l一样，顶端位于ascent的位置。不同的字体cap height的位置实在是差别太大。</p>
+<p><img src="/imgs/processing-textalignment/img8.png" alt="Not at all #3"></p>
+<p>对于Adobe Caslon Pro字体来说，仔细看大写字母E其实是略低于ascent位置的，而这才是它cap height的真正位置。</p>
+<p><img src="/imgs/processing-textalignment/img9.png" alt="Not at all #4"></p>
+<p>但这个差距实在太小了，以至于在75的字符大小下仍然只有一像素的间隙，因此说Adobe Caslon Pro字体的cap height = ascent是合适的。而对于另外两种字体来说，取下面这个公式是合适的：</p>
+<ul>
+<li><code>capHeight = y - 0.74 * textAscent()</code></li>
+</ul>
+<p><img src="/imgs/processing-textalignment/img10.png" alt="Not at all #5"></p>
+<p>而对于x-height，维基上说是位于baseline到cap height距离的一半。但经过实验实际上只有中间那种字体符合这个描述，同时也可观察到，三种字体的x-height是比较接近的，因此可以假设这里实际上应该是baseline到ascent距离的一半，效果如下：</p>
+<p><img src="/imgs/processing-textalignment/img11.png" alt="Not at all #6"></p>
+<p>可以看出前两种字体是越过了那条金线的，但是考虑到x-height的位置也是跟字体密切相关的，并且实验用的字符尺寸实际上非常大，因此以下计算是合适的：</p>
+<ul>
+<li><code>xHeight = y - 0.5 * textAscent()</code></li>
+</ul>
+<hr>
+<h1 id="其他对齐方式"><a href="#其他对齐方式" class="headerlink" title="其他对齐方式"></a>其他对齐方式</h1><p>查看Processing的<a href="https://github.com/kinyue/processing/blob/master/core/src/processing/core/PGraphics.java" target="_blank" rel="external">源代码</a>，可以发现textAlign()调用的是类PGraphics中的方法，在这个类里，垂直对齐的默认值是baseline对齐：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** The current vertical text alignment (read-only) */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">int</span> textAlignY = BASELINE;</span><br></pre></td></tr></table></figure>
+<p>而当用户使用text(String, float, float)方法显示字符时，该方法内部会根据当前的对齐方式做如下处理:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// If multiple lines, sum the height of the additional lines</span></span><br><span class="line">   <span class="keyword">float</span> high = <span class="number">0</span>; <span class="comment">//-textAscent();</span></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = start; i &lt; stop; i++) &#123;</span><br><span class="line">     <span class="keyword">if</span> (chars[i] == <span class="string">'\n'</span>) &#123;</span><br><span class="line">       high += textLeading;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="keyword">if</span> (textAlignY == CENTER) &#123;</span><br><span class="line"><span class="comment">// for a single line, this adds half the textAscent to y</span></span><br><span class="line"><span class="comment">// for multiple lines, subtract half the additional height</span></span><br><span class="line"><span class="comment">//y += (textAscent() - textDescent() - high)/2;</span></span><br><span class="line">y += (textAscent() - high)/<span class="number">2</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (textAlignY == TOP) &#123;</span><br><span class="line"><span class="comment">// for a single line, need to add textAscent to y</span></span><br><span class="line"><span class="comment">// for multiple lines, no different</span></span><br><span class="line">y += textAscent();</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (textAlignY == BOTTOM) &#123;</span><br><span class="line"><span class="comment">// for a single line, this is just offset by the descent</span></span><br><span class="line"><span class="comment">// for multiple lines, subtract leading for each line</span></span><br><span class="line">y -= textDescent() + high;</span><br><span class="line"><span class="comment">//&#125; else if (textAlignY == BASELINE) &#123;</span></span><br><span class="line"><span class="comment">// do nothing</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>考虑单行的情况，则high为0，函数里会重新计算y的值，这意味着实际的字形五线产生了偏移。若由用户传入y值算出的baseline为y，而重新计算得到的baseline为y’，则CENTER对齐下这五条线的坐标如下：</p>
+<ul>
+<li><p><code>y&#39; = y + textAscent() / 2</code></p>
+</li>
+<li><p><code>descent&#39; = y&#39; + textDescent() = y + textAscent() / 2 + textDescent()</code></p>
+</li>
+<li><p><code>ascent&#39; = y&#39; - textAscent() = y - textAscent() / 2</code></p>
+</li>
+<li><p><code>capHeight&#39; = y&#39; - 0.74 * textAscent() = y - 0.24 * textAscent()</code></p>
+</li>
+<li><p><code>xHeight&#39; = y&#39; - 0.5 * textAscent() = y</code></p>
+</li>
+</ul>
+<p>下图是重新计算后画出的字形五线，其中白色的是用户传入的初始y值：</p>
+<p><img src="/imgs/processing-textalignment/img12.png" alt="Not at all #7"></p>
+<p>其它对齐方式可同理算出，此处不再赘述。</p>
+<hr>
+<h1 id="多行对齐"><a href="#多行对齐" class="headerlink" title="多行对齐"></a>多行对齐</h1><p>首先使用Adobe Caslon Pro字体以及默认对齐方式来显示多行字符字符，可以看出，此时Processing相关函数返回的值只是字符第一行的相关值，以下是代码和结果：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">textSize(<span class="number">60</span>);</span><br><span class="line">text(<span class="string">"Live high, \nlive righteously. \nJust take it easy~"</span>,<span class="number">40</span>,<span class="number">100</span>);</span><br><span class="line">strokeWeight(<span class="number">2</span>);</span><br><span class="line">stroke(<span class="number">255</span>,<span class="number">100</span>,<span class="number">0</span>);</span><br><span class="line">line(<span class="number">0</span>,<span class="number">100</span>,<span class="keyword">this</span>.width,<span class="number">100</span>);</span><br><span class="line">stroke(<span class="number">0</span>,<span class="number">255</span>,<span class="number">100</span>);</span><br><span class="line">line(<span class="number">0</span>,<span class="number">100</span>-textAscent(),<span class="keyword">this</span>.width,<span class="number">100</span>-textAscent());</span><br><span class="line">stroke(<span class="number">100</span>,<span class="number">0</span>,<span class="number">255</span>);</span><br><span class="line">line(<span class="number">0</span>,<span class="number">100</span>+textDescent(),<span class="keyword">this</span>.width,<span class="number">100</span>+textDescent());</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img13.png" alt="Multiple lines text"></p>
+<p>Adobe Caslon Pro字体刚好能填充Ascent到Descent之间的空间，因此由上图可以看出两行字符之间其实是有留空的。这里就设计到一个叫<a href="https://www.processing.org/reference/textLeading_.html" target="_blank" rel="external">textLeading</a>的概念了。textLeading意味着两行文字之间的留白，把它的值设分别设为0和textAscent() + textDescent()是这样的：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textLeading(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img14.png" alt="TextLeading 0"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">textLeading(textAscent() + textDescent());</span><br><span class="line"><span class="comment">//textSize(float)函数会将textLeading重置为默认值</span></span><br></pre></td></tr></table></figure>
+<p><img src="/imgs/processing-textalignment/img15.png" alt="TextLeading A+D"></p>
+<p>而这个值它在Processing中的默认是<code>textLeading = (textAscent() + textDescent()) * 1.275f</code>。有上一节的源代码，可以很容易得出整段多行文本的上下边界，以默认对齐为例，假设文本有n行，textLeading值为lead，用户传入text的坐标为(x, y)，文本上边界为<code>multi_ascent</code>，下边界为<code>multi_descent</code>，第k行文字的baseline、ascent和descent为<code>baseline_k</code>、<code>ascent_k</code>和<code>descent_k</code>，则：</p>
+<ul>
+<li><p><code>multi_ascent = y - textAscent()</code></p>
+</li>
+<li><p><code>multi_descent = y + textDescent() + lead * (n - 1)</code></p>
+</li>
+<li><p><code>baseline_k = y + lead * (k - 1)</code></p>
+</li>
+<li><p><code>ascent_k = y + lead * (k - 1) - textAscent()</code></p>
+</li>
+<li><p><code>descent_k = y + lead * (k - 1) + textDescent()</code></p>
+</li>
+</ul>
+<hr>
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>能够算出这些线的坐标之后，给定一串字符，设定好大小、位置、对齐方式之后，可以很容易地算出能紧密包围这串文字的矩形位置。另一方面，对于给定的矩形与对齐方式，也不难反推出在矩形中显示这串字符合适的大小是多少。进一步地，如果需要将文字与圆、椭圆或者多边形关联，可以先计算出这些图形的内接矩形，再将其与文字关联，这部分内容将另文讨论。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kinyue.github.io/2014/12/21/processing-text-alignment/" data-id="cinecrj7a00006g9zvukj2azn" class="article-share-link">Partager</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/processing/">processing</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/09/14/stylish-zhihu-reading/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          知乎问题页面阅读模式
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/12/14/start-processing/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Processing 安装与基本用法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Catégories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Noisy/">Noisy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Mot-clés</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/figures/">figures</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/processing/">processing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/translate/">translate</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/figures/" style="font-size: 10px;">figures</a> <a href="/tags/processing/" style="font-size: 20px;">processing</a> <a href="/tags/translate/" style="font-size: 10px;">translate</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/01/12/the-tail-end/">末尾</a>
+          </li>
+        
+          <li>
+            <a href="/2015/09/14/stylish-zhihu-reading/">知乎问题页面阅读模式</a>
+          </li>
+        
+          <li>
+            <a href="/2014/12/21/processing-text-alignment/">Processing中的文字对齐</a>
+          </li>
+        
+          <li>
+            <a href="/2014/12/14/start-processing/">Processing 安装与基本用法</a>
+          </li>
+        
+          <li>
+            <a href="/2014/12/02/no-man-is-an-island/">No Man Is An Island</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Lance Lin<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
