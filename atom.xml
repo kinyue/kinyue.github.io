@@ -289,9 +289,12 @@
     <link href="http://kinyue.github.io/2014/12/14/start-processing/"/>
     <id>http://kinyue.github.io/2014/12/14/start-processing/</id>
     <published>2014-12-14T04:21:04.000Z</published>
-    <updated>2016-04-30T07:08:11.550Z</updated>
+    <updated>2016-04-30T08:49:18.523Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;Processing-介绍&quot;&gt;&lt;a href=&quot;#Processing-介绍&quot; class=&quot;headerlink&quot; title=&quot;Processing 介绍&quot;&gt;&lt;/a&gt;Processing 介绍&lt;/h2&gt;&lt;p&gt;找这个软件起因于记笔记的时候需要画一些图，而我又不太喜欢用Visio这类软件，一来体积庞大，二来可重用的东西太少。从原则上来讲，记笔记要用的图片大都是一些矢量图，但是用鼠标拖拽来画图的方式总感觉与矢量图格格不入，效率也太低。我因此希望找到一款软件，能够通过编写代码的方式来方便的生成图片，于是想起了以前留意过的一个叫Processing的项目。&lt;br&gt;Processing是怎样的一个东西呢？引用官网的描述：&lt;/p&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Processing is a programming language, development environment, and online community. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Processing-介绍&quot;&gt;&lt;a href=&quot;#Processing-介绍&quot; class=&quot;headerlink&quot; title=&quot;Processing 介绍&quot;&gt;&lt;/a&gt;Processing 介绍&lt;/h2&gt;&lt;p&gt;找这个软件起因于记笔记的时候需要画一些图，而我又不太喜欢用Visio这类软件，一来体积庞大，二来可重用的东西太少。从原则上来讲，记笔记要用的图片大都是一些矢量图，但是用鼠标拖拽来画图的方式总感觉与矢量图格格不入，效率也太低。我因此希望找到一款软件，能够通过编写代码的方式来方便的生成图片，于是想起了以前留意过的一个叫Processing的项目。&lt;br&gt;Processing是怎样的一个东西呢？引用官网的描述：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Processing is a programming language, development environment, and online community. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -333,7 +336,8 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Processing-介绍&quot;&gt;&lt;a href=&quot;#Processing-介绍&quot; class=&quot;headerlink&quot; title=&quot;Processing 介绍&quot;&gt;&lt;/a&gt;Processing 介绍&lt;/h2&gt;&lt;p&gt;找这个软件起因于记笔记的时候需要画一些图，而我又不太
+      &lt;blockquote&gt;
+&lt;p&gt;Processing is a programming language, development environment, and online community. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology.&lt;br&gt;
     
     </summary>
     
