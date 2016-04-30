@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>FILO</title>
-  <subtitle>F In Loneliness</subtitle>
+  <subtitle>F In Loneliness Out</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kinyue.github.io/"/>
-  <updated>2016-04-24T07:55:38.004Z</updated>
+  <updated>2016-04-30T07:09:16.975Z</updated>
   <id>http://kinyue.github.io/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://kinyue.github.io/2016/01/12/the-tail-end/"/>
     <id>http://kinyue.github.io/2016/01/12/the-tail-end/</id>
     <published>2016-01-12T05:50:25.000Z</published>
-    <updated>2016-04-24T07:55:38.004Z</updated>
+    <updated>2016-04-30T07:09:16.975Z</updated>
     
     <content type="html">&lt;blockquote&gt;
+&lt;p&gt;在我们仍然年轻的时候，有些事情却已经去到它们的末尾了。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;文/ &lt;a href=&quot;http://waitbutwhy.com/2015/12/the-tail-end.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tim Urban&lt;/a&gt;&lt;br&gt;翻译/ &lt;a href=&quot;http://kinyue.github.io/about/&quot;&gt;Lance&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;在去年的一篇文章中，我们用方阵图来表示人类寿命。按年记是这样的：&lt;/p&gt;
@@ -78,7 +79,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;文/ &lt;a href=&quot;http://waitbutwhy.com/2015/12/the-tail-end.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tim Urban&lt;/a&gt;&lt;br&gt;翻译/ &lt;a href=&quot;ht
+&lt;p&gt;在我们仍然年轻的时候，有些事情却已经去到它们的末尾了。&lt;br&gt;
     
     </summary>
     
@@ -96,9 +97,10 @@
     <link href="http://kinyue.github.io/2015/09/14/stylish-zhihu-reading/"/>
     <id>http://kinyue.github.io/2015/09/14/stylish-zhihu-reading/</id>
     <published>2015-09-14T05:43:55.000Z</published>
-    <updated>2016-04-24T08:30:28.432Z</updated>
+    <updated>2016-04-30T07:07:29.198Z</updated>
     
-    <content type="html">&lt;p&gt;自从用上Readability/Pocket这一类的工具之后，有时候在知乎看文章就会想，要是能有个脚本可以把页面转换成类似于Pocket那样的样式就好了。当然我可以直接保存到Readability或者Pocket上，不过这样做就得按一次按钮并且打开Pocket的页面，或许还要登陆，其实也挺麻烦的。有些其他的页面firefox也支持阅读模式，但并不常见，所谓可遇而不可求。&lt;br&gt;直到前阵子，我发现了个FF有个插件叫Stylish。这个插件呢挺有意思的，可以说CSS版本的Greasemonkey。它有个脚本库，应用这些脚本库里用户上传的脚本，你可以随心所欲地自定义常用网站的样式。比如黑暗版谷歌：&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;em&gt;一个Stylish脚本。&lt;/em&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自从用上Readability/Pocket这一类的工具之后，有时候在知乎看文章就会想，要是能有个脚本可以把页面转换成类似于Pocket那样的样式就好了。当然我可以直接保存到Readability或者Pocket上，不过这样做就得按一次按钮并且打开Pocket的页面，或许还要登陆，其实也挺麻烦的。有些其他的页面firefox也支持阅读模式，但并不常见，所谓可遇而不可求。&lt;br&gt;直到前阵子，我发现了个FF有个插件叫Stylish。这个插件呢挺有意思的，可以说CSS版本的Greasemonkey。它有个脚本库，应用这些脚本库里用户上传的脚本，你可以随心所欲地自定义常用网站的样式。比如黑暗版谷歌：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/imgs/stylish-zhihu-reading/dark_google.png&quot; alt=&quot;Dark Google&quot;&gt;&lt;/p&gt;
 &lt;p&gt;当然啦，上面也有不少适用于知乎的自定义样式，比如由&lt;a href=&quot;https://userstyles.org/users/282714&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tomowm&lt;/a&gt;制作的&lt;a href=&quot;https://userstyles.org/styles/109460/zhihu-evernoe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎答案阅读模式&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/imgs/stylish-zhihu-reading/zhihu_read_tomowm.png&quot; alt=&quot;Zhihu Answer Read Mode&quot;&gt;&lt;/p&gt;
@@ -115,7 +117,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;自从用上Readability/Pocket这一类的工具之后，有时候在知乎看文章就会想，要是能有个脚本可以把页面转换成类似于Pocket那样的样式就好了。当然我可以直接保存到Readability或者Pocket上，不过这样做就得按一次按钮并且打开Pocket的页面，或许还
+      &lt;p&gt;&lt;em&gt;一个Stylish脚本。&lt;/em&gt;&lt;br&gt;
     
     </summary>
     
@@ -131,9 +133,12 @@
     <link href="http://kinyue.github.io/2014/12/21/processing-text-alignment/"/>
     <id>http://kinyue.github.io/2014/12/21/processing-text-alignment/</id>
     <published>2014-12-21T04:47:03.000Z</published>
-    <updated>2016-04-24T13:55:24.241Z</updated>
+    <updated>2016-04-30T07:07:05.504Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;几个排版的概念&quot;&gt;&lt;a href=&quot;#几个排版的概念&quot; class=&quot;headerlink&quot; title=&quot;几个排版的概念&quot;&gt;&lt;/a&gt;几个排版的概念&lt;/h1&gt;&lt;p&gt;Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidth()，但没有对应的获取高度的textHeight()。另外textAscent()和textDescent()两个函数又是干嘛的呢？&lt;a href=&quot;https://www.processing.org/reference/textDescent_.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;API&lt;/a&gt;里的描述是：&lt;/p&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;几个排版概念已经如何在Processing中估算它们的位置。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;几个排版的概念&quot;&gt;&lt;a href=&quot;#几个排版的概念&quot; class=&quot;headerlink&quot; title=&quot;几个排版的概念&quot;&gt;&lt;/a&gt;几个排版的概念&lt;/h1&gt;&lt;p&gt;Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidth()，但没有对应的获取高度的textHeight()。另外textAscent()和textDescent()两个函数又是干嘛的呢？&lt;a href=&quot;https://www.processing.org/reference/textDescent_.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;API&lt;/a&gt;里的描述是：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Returns descent of the current font at its current size. This information is useful for determining the height of the font below the baseline.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -267,7 +272,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;几个排版的概念&quot;&gt;&lt;a href=&quot;#几个排版的概念&quot; class=&quot;headerlink&quot; title=&quot;几个排版的概念&quot;&gt;&lt;/a&gt;几个排版的概念&lt;/h1&gt;&lt;p&gt;Processing中有几个跟文字有关的API让我很困惑。比如它有获取文字所占长度的textWidt
+      &lt;blockquote&gt;
+&lt;p&gt;几个排版概念已经如何在Processing中估算它们的位置。&lt;br&gt;
     
     </summary>
     
@@ -283,7 +289,7 @@
     <link href="http://kinyue.github.io/2014/12/14/start-processing/"/>
     <id>http://kinyue.github.io/2014/12/14/start-processing/</id>
     <published>2014-12-14T04:21:04.000Z</published>
-    <updated>2016-04-24T05:05:56.260Z</updated>
+    <updated>2016-04-30T07:08:11.550Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Processing-介绍&quot;&gt;&lt;a href=&quot;#Processing-介绍&quot; class=&quot;headerlink&quot; title=&quot;Processing 介绍&quot;&gt;&lt;/a&gt;Processing 介绍&lt;/h2&gt;&lt;p&gt;找这个软件起因于记笔记的时候需要画一些图，而我又不太喜欢用Visio这类软件，一来体积庞大，二来可重用的东西太少。从原则上来讲，记笔记要用的图片大都是一些矢量图，但是用鼠标拖拽来画图的方式总感觉与矢量图格格不入，效率也太低。我因此希望找到一款软件，能够通过编写代码的方式来方便的生成图片，于是想起了以前留意过的一个叫Processing的项目。&lt;br&gt;Processing是怎样的一个东西呢？引用官网的描述：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -343,14 +349,15 @@
     <link href="http://kinyue.github.io/2014/12/02/no-man-is-an-island/"/>
     <id>http://kinyue.github.io/2014/12/02/no-man-is-an-island/</id>
     <published>2014-12-02T04:05:04.000Z</published>
-    <updated>2016-04-24T05:00:40.611Z</updated>
+    <updated>2016-04-30T07:06:29.870Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;em&gt;–John Donne&lt;/em&gt;&lt;br&gt;No man is an island,&lt;br&gt;entire of itself;&lt;br&gt;every man is a piece of the continent,&lt;br&gt;a part of the main.&lt;br&gt;If a clod be washed away by the sea,&lt;br&gt;Europe is the less,&lt;br&gt;as well as if a promontory were,&lt;br&gt;as well as if a manor of thy friend’s or of thine own were:&lt;br&gt;any man’s death diminishes me,&lt;br&gt;because I am involved in mankind,&lt;br&gt;and, therefore,&lt;br&gt;never send to know for whom the bells tolls;&lt;br&gt;&lt;strong&gt;it tolls for thee.&lt;/strong&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;em&gt;–John Donne&lt;/em&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No man is an island,&lt;br&gt;entire of itself;&lt;br&gt;every man is a piece of the continent,&lt;br&gt;a part of the main.&lt;br&gt;If a clod be washed away by the sea,&lt;br&gt;Europe is the less,&lt;br&gt;as well as if a promontory were,&lt;br&gt;as well as if a manor of thy friend’s or of thine own were:&lt;br&gt;any man’s death diminishes me,&lt;br&gt;because I am involved in mankind,&lt;br&gt;and, therefore,&lt;br&gt;never send to know for whom the bells tolls;&lt;br&gt;&lt;strong&gt;it tolls for thee.&lt;/strong&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;em&gt;–John Donne&lt;/em&gt;&lt;br&gt;No man is an island,&lt;br&gt;entire of itself;&lt;br&gt;every man is a piece of the continent,&lt;br&gt;a part of the main.&lt;br&gt;If 
+      &lt;p&gt;&lt;em&gt;–John Donne&lt;/em&gt;&lt;br&gt;
     
     </summary>
     

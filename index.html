@@ -1,1 +1,1033 @@
-<!DOCTYPE html><html lang="default"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> FILO</title><meta name="description" content="F is Fault"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2016/01/12/the-tail-end/" class="post-title-link">末尾</a></h2><div class="post-time">Jan 12, 2016</div><div class="post-content"></div><a href="/2016/01/12/the-tail-end/" class="read-more">...more</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2015/09/14/stylish-zhihu-reading/" class="post-title-link">知乎问题页面阅读模式</a></h2><div class="post-time">Sep 14, 2015</div><div class="post-content"></div><a href="/2015/09/14/stylish-zhihu-reading/" class="read-more">...more</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2014/12/21/processing-text-alignment/" class="post-title-link">Processing中的文字对齐</a></h2><div class="post-time">Dec 21, 2014</div><div class="post-content"></div><a href="/2014/12/21/processing-text-alignment/" class="read-more">...more</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2014/12/14/start-processing/" class="post-title-link">Processing 安装与基本用法</a></h2><div class="post-time">Dec 14, 2014</div><div class="post-content"></div><a href="/2014/12/14/start-processing/" class="read-more">...more</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2014/12/02/no-man-is-an-island/" class="post-title-link">No Man Is An Island</a></h2><div class="post-time">Dec 2, 2014</div><div class="post-content"></div><a href="/2014/12/02/no-man-is-an-island/" class="read-more">...more</a></article></li></ul></section><footer><div class="paginator"></div><div class="copyright"><p>© 2015 - 2016 <a href="http://kinyue.github.io">Lance Lin</a>, unless otherwise noted.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="FILO" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="F is Fault">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FILO">
+<meta property="og:url" content="http://kinyue.github.io/index.html">
+<meta property="og:site_name" content="FILO">
+<meta property="og:description" content="F is Fault">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FILO">
+<meta name="twitter:description" content="F is Fault">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> FILO </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">FILO</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">F In Loneliness Out</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/12/the-tail-end/" itemprop="url">
+                  末尾
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-01-12T13:50:25+08:00" content="2016-01-12">
+              2016-01-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Noisy/" itemprop="url" rel="index">
+                    <span itemprop="name">Noisy</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>在我们仍然年轻的时候，有些事情却已经去到它们的末尾了。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/12/the-tail-end/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/09/14/stylish-zhihu-reading/" itemprop="url">
+                  知乎问题页面阅读模式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2015-09-14T13:43:55+08:00" content="2015-09-14">
+              2015-09-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Tools/" itemprop="url" rel="index">
+                    <span itemprop="name">Tools</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><em>一个Stylish脚本。</em><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/09/14/stylish-zhihu-reading/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2014/12/21/processing-text-alignment/" itemprop="url">
+                  Processing中的文字对齐
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2014-12-21T12:47:03+08:00" content="2014-12-21">
+              2014-12-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>几个排版概念已经如何在Processing中估算它们的位置。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2014/12/21/processing-text-alignment/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2014/12/14/start-processing/" itemprop="url">
+                  Processing 安装与基本用法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2014-12-14T12:21:04+08:00" content="2014-12-14">
+              2014-12-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Tools/" itemprop="url" rel="index">
+                    <span itemprop="name">Tools</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Processing-介绍"><a href="#Processing-介绍" class="headerlink" title="Processing 介绍"></a>Processing 介绍</h2><p>找这个软件起因于记笔记的时候需要画一些图，而我又不太喜欢用Visio这类软件，一来体积庞大，二来可重用的东西太少。从原则上来讲，记笔记要用的图片大都是一些矢量图，但是用鼠标拖拽来画图的方式总感觉与矢量图格格不入，效率也太低。我因此希望找到一款软件，能够通过编写代码的方式来方便的生成图片，于是想起了以前留意过的一个叫Processing的项目。<br>Processing是怎样的一个东西呢？引用官网的描述：</p>
+<blockquote>
+<p>Processing is a programming language, development environment, and online community. Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology.</p>
+</blockquote>
+<p>简单来讲就是一套用于绘图的编程语言以及对应的开发环境。总体上来讲，似乎用户里设计师与数字艺术家占的比例大一些，用来制作示意图或者UML之类并不一定很合适。但是一来实在没有其他替代选项，二来展示的作品实在过于酷炫，所以毅然决定入坑。以下图片都是Processing自带的Sample，所写不过二三十行代码，却能表现出很好的效果。<br>首先是这张简单的点阵图：</p>
+<p><img src="/imgs/start-processing/simple_sample.png" alt="Simple Sample"><br>原图是动态的，小圆点会在初始位置附近以一定的幅度随机晃动。<br>以下图片是在鼠标从左边移动到右边时，多边形的边数不断增加的过程：</p>
+<p><img src="/imgs/start-processing/TriangleStrip_1.png" alt="TriangleStrip_1"><br><img src="/imgs/start-processing/TriangleStrip_2.png" alt="TriangleStrip_2"><br><img src="/imgs/start-processing/TriangleStrip_3.png" alt="TriangleStrip_3"></p>
+<p>还有一些复杂的几何图形以及数据可视化图形：</p>
+<p><img src="/imgs/start-processing/tree.png" alt="tree"><br><img src="/imgs/start-processing/data_visualization_1.png" alt="data_visualization_1"><br><img src="/imgs/start-processing/data_visualization_2.png" alt="data_visualization_2"></p>
+<p>上面举的例子里，几何图形、数据表达等等正是我想要的，但是网上搜了一圈似乎没有现成的用于画流程图以及示意图的库，看来真要用上还得靠自己造轮子了。</p>
+<h2 id="安装与运行"><a href="#安装与运行" class="headerlink" title="安装与运行"></a>安装与运行</h2><p>Processing是一款绿色软件，官网上可找到下载链接。当前版本（2.2.1）解压后有自带有一个Java的运行时环境。解压完毕后打开“processing.exe”便可直接编写代码并运行，同时在[File]-&gt;[Examples]可以看到官方提供的许多例子。由于Processing部分函数会使用openGL加速，如果显卡不支持或者驱动程序老旧可能会导致运行时报错。解决办法也很简单：把显卡驱动更新到最新版本，或者，换一个显卡吧！<br>Processing自带的IDE朴素简洁，但是菜单栏里点了一圈好像没有Debug功能，而且每次新建一个Sketch都会打开一个新窗口，用起来不是很顺手。</p>
+<p><img src="/imgs/start-processing/Processing_IDE_1.png" alt="Default IDE"></p>
+<p>当然可以使用其他流行的IDE来替换，以Sublime Text 2为例，大致的配置步骤如下：</p>
+<ol>
+<li>将Processing路径添加到PATH环境变量中。</li>
+<li>在Sublime Text中安装Processing的Package。</li>
+</ol>
+<p>更详细的步骤可以在Github上找到。在Sublime上编写程序方便快捷，但是由于没有足够好的插件，创建项目依然不方便，同样也不能Debug，所以看来还是要回到Eclipse的怀抱。所幸，在Eclipse上配置Processing开发环境比想象中还要容易。在安装好Eclipse和Processing的基础上，基本上也就两个步骤：</p>
+<ol>
+<li>创建项目并且导入\processing-2.2.1\core\library下的core.jar。</li>
+<li>把core.jar加入到Build Path中。</li>
+</ol>
+<h2 id="语法简介"><a href="#语法简介" class="headerlink" title="语法简介"></a>语法简介</h2><p>从上面Eclipse的配置也可以看出，Processing是基于Java开发的。在官方提供的教程中可以看到用户编写的Processing启动类是要继承类processing.core.PApplet的。基于这个名字，和程序能以Java Applet的方式运行两点，有理由认为Processing其实是基于Applet实现的。<br>查看PApplet源代码，可以发现有一段注释如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">* As of Processing 3.0, we have removed Applet as the base class for PApplet.</span><br><span class="line">* This means that we can remove lots of legacy code, however one downside is</span><br><span class="line">* that it's no longer possible (without extra code) to embed a PApplet into</span><br><span class="line">* another Java application.</span><br><span class="line">*/</span></span><br></pre></td></tr></table></figure>
+<p>使用Java语法编程大大降低了许多程序员的学习成本，但是也带来性能方面的一些忧虑。虽然看低Java性能表现可以说是一种刻板印象，实际上我也不知道其他语言在图形编程方面的表现如何，但我的电脑跑Examples里稍微大一些的程序确实会比较吃力。<br>在Processing上绘制图形非常简单。使用自带IDE的话可以直接调用函数绘制图形，比如画一条直线是将起始点与终止点的坐标传给line()函数：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">line(<span class="number">30</span>, <span class="number">20</span>, <span class="number">85</span>, <span class="number">75</span>);</span><br><span class="line"><span class="comment">//line(x1, y1, x2, y2);</span></span><br></pre></td></tr></table></figure>
+<p>这里涉及到Procesing的坐标系，在Processing中以size(width,height)函数来定义画板大小，以画板的最左上角为(0,0)点，X轴与Y轴的增长方向如图：</p>
+<p><img src="/imgs/start-processing/coordinate.png" alt="coordinate"></p>
+<p>矩形与椭圆形（圆形）则由前两个参数确定图形“左上角”的位置，后两个参数则分别定义图形在X轴上的宽度以及Y轴上的高度：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//set up the weight of border line</span></span><br><span class="line">strokeWeight(<span class="number">1</span>);</span><br><span class="line"><span class="comment">//set up the color to fill the shape and border line</span></span><br><span class="line">fill(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">stroke(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>);</span><br><span class="line"><span class="comment">//draw rectangle</span></span><br><span class="line">rect(<span class="number">150</span>,<span class="number">150</span>,<span class="number">100</span>,<span class="number">50</span>);</span><br><span class="line"><span class="comment">//draw circle</span></span><br><span class="line">ellipse(<span class="number">250</span>,<span class="number">250</span>,<span class="number">50</span>,<span class="number">50</span>);</span><br></pre></td></tr></table></figure>
+<p>得到的图形如下：</p>
+<p><img src="/imgs/start-processing/draw_rect_circle.png" alt="Rectangle and Circle"></p>
+<p>从上面代码可以看出，程序设置图形的边框颜色和填充颜色，调用的既不是属于图形对象的函数，也不将图形的对象作为参数传给函数，因此，Processing中很多函数比如fill(float RGB)和strokeWeight(float weight)做的都是全局设置。也即是说，一旦你设置了某个公共属性，后面的所有图形都自动带有这个属性，如果需要改变这个设置，则要重新调用属性函数。<br>另外，Processing的一大强项是动画处理。以下几张据说是来自柏林的David Whyte用Processing制作的Gif图片，动画处理能力可见一斑。</p>
+<p><img src="/imgs/start-processing/sample_gif_1.gif" alt="gif1"><br><img src="/imgs/start-processing/sample_gif_2.gif" alt="gif2"><br><img src="/imgs/start-processing/sample_gif_3.gif" alt="gif3"><br><img src="/imgs/start-processing/sample_gif_4.gif" alt="gif4"></p>
+<p>要使画面动起来其实也很方便，类PApplet中有以下两个函数：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;...&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>&#123;...&#125;</span><br></pre></td></tr></table></figure>
+<p>程序启动后会先后调用setup()和draw()。其中setup()用于做一些准备工作，设置一些全局属性之类，它只会执行一次。而draw()函数则会无限循环，直到程序关闭或者调用了noLoop()函数。可用frameRate()来设置draw()在一秒内被调用的次数。而在draw()函数里，获取图形的当前状态与位置，然后在下一帧新的位置画出新状态的图形，这样便形成了动画。</p>
+<p>以上，2014/12/20 0:58</p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2014/12/02/no-man-is-an-island/" itemprop="url">
+                  No Man Is An Island
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2014-12-02T12:05:04+08:00" content="2014-12-02">
+              2014-12-02
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Noisy/" itemprop="url" rel="index">
+                    <span itemprop="name">Noisy</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><em>–John Donne</em><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2014/12/02/no-man-is-an-island/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="Lance Lin" />
+          <p class="site-author-name" itemprop="name">Lance Lin</p>
+          <p class="site-description motion-element" itemprop="description">F is Fault</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">categories</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lance Lin</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
