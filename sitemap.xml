@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kinyue.github.io/2014/12/14/start-processing/</loc>
+    <loc>http://kinyue.github.io/tags/index.html</loc>
     
-    <lastmod>2016-04-30T08:49:18.523Z</lastmod>
+    <lastmod>2016-04-30T12:54:48.268Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://kinyue.github.io/tags/index.html</loc>
+    <loc>http://kinyue.github.io/about/index.html</loc>
     
-    <lastmod>2016-04-30T08:21:07.887Z</lastmod>
+    <lastmod>2016-04-30T12:49:18.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kinyue.github.io/2014/12/14/start-processing/</loc>
+    
+    <lastmod>2016-04-30T08:49:18.523Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://kinyue.github.io/2014/12/02/no-man-is-an-island/</loc>
     
     <lastmod>2016-04-30T07:06:29.870Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://kinyue.github.io/about/index.html</loc>
-    
-    <lastmod>2016-04-24T07:28:36.922Z</lastmod>
     
   </url>
   

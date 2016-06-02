@@ -1,0 +1,45 @@
+#menu-inner {
+    text-align: center;
+}
+
+#menu-inner a {
+    padding: 10px;
+}
+
+#menu-inner a{
+	color: white;
+}
+
+body {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#recent-posts {
+	margin-left: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+
+.recent-post-item {	
+	margin: 20px;
+	background: white;
+	display: block;
+	margin: 25px;
+	height: auto;
+	box-shadow: 4px 6px 5px #495360;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-radius: 2px;
+}
+
+.recent-post-item a {
+	color: #495365;
+}
+
+html {
+	background-color: #495365;
+}
